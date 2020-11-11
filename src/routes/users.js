@@ -8,7 +8,7 @@ const Persona = require('../Models/persona');
 
 router.get('/favorites/:dni', async (req, res) => {
     const response = await fetch(`${URI_DB}&dni=${req.params.dni}`); //look for favorites in DB. All ID´s
-    //Here its going to be the function getsupeheroIds: look for superhero data of every ID on the favorites list (1x1)
+    //Here its going to be the function getFavoritesCompleteData: look for superhero data of every ID on the favorites list (1x1)
     const data = await response.json();
     res.send(data);
 });
@@ -33,3 +33,5 @@ try {
 // Here its gonna be a router.delete to delete favorites
 
 module.exports = router;
+
+//All this code it´s goning to be moved into userControler.js and userService.js, as appropriate

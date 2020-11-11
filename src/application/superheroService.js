@@ -30,17 +30,9 @@ function makeSuperHeroList(data) {
     return frontResponse;
 }
 
-//This function will take care of paging
+//This function will take care of pagination
 function allSuperHerosData(data) {
     let pageList = [];
-
-}
-
-
-function getSuperHeroList(superheroListIds) {
-    for(let i = 0; i < data.data.results.length; i++) {
-        
-    }
 
 }
 
