@@ -2,7 +2,7 @@ const { Router } = require('express');
 const router = Router();
 const mongoose = require('mongoose');
 const fetch = require('node-fetch');
-const URI_DB = 'mongodb+srv://arganarazalvaro:cocacola88@cluster0.yd2hm.mongodb.net/';
+
 const Persona = require('../Models/persona');
 const mongo = require("mongodb");
 
