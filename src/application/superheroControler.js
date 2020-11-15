@@ -4,9 +4,9 @@ const fetch = require('node-fetch');
 const { rest } = require('underscore');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const Superhero = require('../Models/superhero');
+const Superhero = require('../Models/Superhero');
 
-// Controler.js handles the data and responses, the logic is on the Service.js
+// superheroControler.js handles the data and responses of supeheros, the logic is on the superheroService.js
 
 const { makeSuperHeroList } = require('./superheroService');
 
@@ -28,7 +28,6 @@ router.get('/', async (req, res) => {
         }
         res.status(500).send(err);
     }
-    
 });
 
 router.get('/:limit/:offset', async (req, res) => {

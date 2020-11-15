@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const fetch = require('node-fetch');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const Superhero = require('./Models/superhero');
+const Superhero = require('./Models/Superhero');
 
 //settings
 app.set('port', process.env.PORT || 3000);
@@ -16,7 +16,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 // routes
-app.use('/api/users', require('./routes/users'));
+app.use('/api/favorites', require('./application/favoriteControler'));
 app.use('/api/characters', require('./application/superheroControler'));
 
 // starting the server and conecting with MongoDB

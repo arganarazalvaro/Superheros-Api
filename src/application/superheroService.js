@@ -1,4 +1,4 @@
-//Here we will make the logic, te functions will be used in the Controler.js
+//Here it´s the logic for superheros, te functions will be used in the superheroControler.js
 
 const { Router } = require('express');
 const router = Router();
@@ -28,12 +28,6 @@ function makeSuperHeroList(data) {
             superHeroList: finalList
         }
     return frontResponse;
-}
-
-//This function will take care of pagination
-function allSuperHerosData(data) {
-    let pageList = [];
-
 }
 
 module.exports = {makeSuperHeroList};

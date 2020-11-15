@@ -1,1 +1,0 @@
-// Here it´s gonna be managed all the data and resposes for user´s favorite superheros
