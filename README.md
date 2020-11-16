@@ -65,7 +65,7 @@ This are the main routes you may want to use.
 | Get first 20 SH| http://localhost:3000/api/characters |
 | Get list of SH setting limit and offset (*1) | http://localhost:3000/api/characters/:limit/:offset |
 | Search by name | http://localhost:3000/api/characters/:name |
-| Get user´s full favorite list(2*) | http://localhost:3000/api/favorites/full-list/:dni] |
+| Get user´s full favorite list(*2) | http://localhost:3000/api/favorites/full-list/:dni] |
 | Get user´s favorites ID´s list | http://localhost:3000/api/favorites/:dni |
 | Post user´s favorites | http://localhost:3000/api/favorites/:dni |
 | Modify (Put) user´s favorites | http://localhost:3000/api/favorites/:dni |
@@ -75,6 +75,25 @@ This are the main routes you may want to use.
 Remember that /: means a parameter is ment to be used. For example: http://localhost:3000/api/characters/Hulk will get the Hulk data
 
 (*2) All the favorites request uses DNI (National identity document) as the identifier of the user.
+
+Here are some examples of use:
+
+Searching for Hulk:
+
+![image](https://user-images.githubusercontent.com/58991309/99259852-62088e80-27f9-11eb-97cf-63fb2bc708e9.png)
+
+Geting Superheroes List using limit 50 and seting offset to 1200:
+
+![image](https://user-images.githubusercontent.com/58991309/99260045-ac8a0b00-27f9-11eb-978f-8a6fadf244c4.png)
+
+Getting user´s favorite full Data:
+
+![image](https://user-images.githubusercontent.com/58991309/99260584-59648800-27fa-11eb-8e87-6e4ca06551f4.png)
+
+POST a new user´s Favorite List
+
+![image](https://user-images.githubusercontent.com/58991309/99260913-c5df8700-27fa-11eb-8cf5-ca4e33a740f2.png)
+
 
 License
 ----
