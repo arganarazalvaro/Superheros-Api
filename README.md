@@ -5,7 +5,7 @@
 
 Welcome to this incredible superhero API!
 
-This is an API that uses [Marvel´s API](https://developer.marvel.com/docs) to get a lot of data from all Marvel´s superheroes and then applies some logic so the front-end gets and uses only the info they need.
+This is an API that uses [Marvel´s API](https://developer.marvel.com/docs) to get a lot of data from all Marvel´s superheroes and then apply some logic so the front-end gets and uses only the info they need.
 
 The API allows you to:
 
@@ -82,7 +82,7 @@ Searching for Hulk:
 
 ![image](https://user-images.githubusercontent.com/58991309/99259852-62088e80-27f9-11eb-97cf-63fb2bc708e9.png)
 
-Geting Superheroes List using limit 50 and seting offset to 1200:
+Getting Superheroes List using limit 50 and setting offset to 1200:
 
 ![image](https://user-images.githubusercontent.com/58991309/99260045-ac8a0b00-27f9-11eb-978f-8a6fadf244c4.png)
 
