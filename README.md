@@ -76,7 +76,7 @@ Remember that /: means a parameter is ment to be used. For example: http://local
 
 (*2) All the favorites request uses DNI (National identity document) as the identifier of the user.
 
-#### Here are some examples
+### Some examples
 
 Searching for Hulk:
 
