@@ -14,7 +14,7 @@ The API allows you to:
   - Search for all superheroes (it is arranged alphabetically and paged, you can handle the limit up to 50 per page and you can define the offset).
   - Post, Get, Put (modify) and Delete your favorites superheroes from a personal favorite list.
 
-# New Features!
+### New Features!
 
   - Now you can get only the ID´s of your favorite superheroes list, or you can get the full data that front-end needs of the favorite superheroes list, depending on your needs.
 
@@ -76,7 +76,7 @@ Remember that /: means a parameter is ment to be used. For example: http://local
 
 (*2) All the favorites request uses DNI (National identity document) as the identifier of the user.
 
-Here are some examples of use:
+#### Here are some examples
 
 Searching for Hulk:
 
