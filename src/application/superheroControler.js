@@ -5,8 +5,9 @@ const { rest } = require('underscore');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const Superhero = require('../Models/Superhero');
+const _ = require("lodash");
 
-// superheroControler.js handles the data and responses of supeheros, the logic is on the superheroService.js
+// superheroControler.js handles the data and responses of supeheros
 
 const { makeSuperHeroList } = require('./superheroService');
 
@@ -22,9 +23,9 @@ router.get('/', async (req, res) => {
         console.log("An error has ocurred while trying to get the superheroList");
         console.log("An error has ocurred:", error );
         const err = {
-            code:101,
-            severity:"HIGH",
-            message:"Server Internal Error"
+            code:!_.isEmpty(error.code)?error.code:500,
+            severity:!_.isEmpty(error.severity)?error.severity:"HIGHT",
+            message:!_.isEmpty(error.message)?error.message:"Server Internal Error"
         }
         res.status(500).send(err);
     }
@@ -40,9 +41,9 @@ router.get('/:limit/:offset', async (req, res) => {
         console.log("An error has ocurred while trying to get the superheroList");
         console.log("An error has ocurred:", error );
         const err = {
-            code:101,
-            severity:"HIGH",
-            message:"Server Internal Error"
+            code:!_.isEmpty(error.code)?error.code:500,
+            severity:!_.isEmpty(error.severity)?error.severity:"HIGHT",
+            message:!_.isEmpty(error.message)?error.message:"Server Internal Error"
         }
         res.status(500).send(err);
     }
@@ -58,9 +59,9 @@ router.get('/:name', async (req, res) => {
         console.log("An error has ocurred while trying to get your superhero");
         console.log("An error has ocurred:", error );
         const err = {
-            code:101,
-            severity:"HIGH",
-            message:"Server Internal Error"
+            code:!_.isEmpty(error.code)?error.code:500,
+            severity:!_.isEmpty(error.severity)?error.severity:"HIGHT",
+            message:!_.isEmpty(error.message)?error.message:"Server Internal Error"
         }
         res.status(500).send(err);
     }
